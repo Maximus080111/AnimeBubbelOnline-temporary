@@ -18,11 +18,16 @@ body{
 }
 
 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
 .title{
     color: #E63946;
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 3rem;
 }
@@ -37,12 +42,26 @@ body{
 button {
     background: #E63946;
     padding: 20px 70px;
-    text-decoration: none;
     color: white;
     border-radius: 15px;
     border: none;
     font-weight: 700;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.discord-icon {
+    width: 30px;
+    height: 30px;
+}
+
+button > p {
+    margin-left: 10px;
+}
+
+.discord-link {
+    text-decoration: none;
 }
 
 button:hover {
